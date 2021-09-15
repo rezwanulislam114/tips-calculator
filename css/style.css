@@ -1,0 +1,171 @@
+/* import google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #025151;
+    font-size: 20px;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #c6fffc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 60%;
+    min-height: 450px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 30px #c9c9c95d;
+    display: flex;
+}
+/* input section  */
+.input-section {
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input-section h4 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+/* bill input section */
+.bill input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #eeeeee;
+    font-size: 16px;
+}
+
+/* tip selection section  */
+.tip-selection-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.tip-selection-buttons button {
+    background: #025151;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.tip-selection-buttons button:hover {
+    background: #2cc59f;
+}
+.tip-selection-buttons input {
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 18px;
+}
+
+/* peoples section  */
+.peoples input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #eeeeee;
+    font-size: 16px;
+}
+/* number input arrows hide  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* output section  */
+.output-section {
+    width: 50%;
+    background: #025151;
+    border-radius: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.tip-ammount, .total-ammount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    color: #fff;
+}
+.tip-ammount h2, .total-ammount h2 {
+    color: #2cc59f;
+    font-size: 36px;
+}
+.reset {
+    display: flex;
+    justify-content: center;
+}
+.reset button {
+    background: #2cc59f;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reset button:hover {
+    background: #5bf1cc;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: block;
+        padding: 50px 0;
+    }
+    .container {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+    .tip-selection-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .output-section, .input-section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .bill, .tip-selection, .peoples {
+        margin-bottom: 30px;
+    }
+}
