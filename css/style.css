@@ -168,4 +168,7 @@ input::-webkit-inner-spin-button {
     .bill, .tip-selection, .peoples {
         margin-bottom: 30px;
     }
+    .reset {
+        margin-top: 2rem;
+    }
 }
