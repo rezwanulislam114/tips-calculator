@@ -22,18 +22,21 @@
                 </div>
                 <div class="tip-selection">
                     <h4>Select Tip</h4>
-                    <div class="tip-selection-buttons">
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button>15%</button>
-                        <button>25%</button>
-                        <button>50%</button>
+                    <div class="tip-selection-buttons" id="tip-selection">
+                        <button id="tip-5" value="5">5%</button>
+                        <button id="tip-10" value="10">10%</button>
+                        <button value="15">15%</button>
+                        <button value="25">25%</button>
+                        <button value="50">50%</button>
                         <input type="number" placeholder="Custom">
                     </div>
                 </div>
                 <div class="peoples">
                     <h4>Number of Peoples</h4>
                     <input type="number" placeholder="Number of people">
+                </div>
+                <div class="calculate">
+                    <button id="calculate-button">Calculate</button>
                 </div>
             </div>
             <div class="output-section">
@@ -59,5 +62,8 @@
             </div>
         </div>
     </section>
+
+    <!-- js file link  -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ body {
     justify-content: space-around;
 }
 .input-section h4 {
-    margin-bottom: 1rem;
+    margin-bottom: .25rem;
     font-size: 20px;
 }
 
@@ -95,6 +95,24 @@ body {
     outline: none;
     background: #eeeeee;
     font-size: 16px;
+}
+.calculate {
+    display: flex;
+    justify-content: center;
+}
+.calculate button {
+    background: #2cc59f;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.calculate button:hover {
+    background: #5bf1cc;
 }
 /* number input arrows hide  */
 input::-webkit-outer-spin-button,
